@@ -9,9 +9,15 @@ NET/PostgreSQLDatabaseProvider.Tests/ardoPGSQLDatabaseProvider.Tests.VisualState
 NET/Libraries/DatabaseAbstractionLayer.csproj.FileListAbsolute.txt
 NET/Libraries/DatabaseAbstractionLayer.csprojResolveAssemblyReference.cache
 NET/Projects/DatabaseProvider.Tests/obj/Debug/*
+NET/Projects/DatabaseProvider.Tests/obj/Release/*
 NET/Libraries/plugins/database/OutSystems.HubEdition.DatabaseAbstractionLayer.xml
 NET/PostgreConnector/PostgreConnector/obj/Debug/*
 NET/PostgreConnector/RedshiftConnector/obj/Debug/*
+NET/PostgreConnector/PostgreConnector/obj/Release/*
+NET/PostgreConnector/RedshiftConnector/obj/Release/*
+NET/PostgreConnector/PostgreConnector/bin/Release/*
+NET/PostgreConnector/RedshiftConnector/bin/Release/*
+
 *.suo
 *.jar
 J2EE/ardoPostgreSQL.Tests/res.txt
@@ -22,3 +28,6 @@ J2EE/ardoPostgreSQL.Tests/res.txt
 *.css
 *.suo
 NET/Libraries/TemporaryGeneratedFile_*
+.vs/
+NET/Libraries/*.cs
+NET/Libraries/*.cache

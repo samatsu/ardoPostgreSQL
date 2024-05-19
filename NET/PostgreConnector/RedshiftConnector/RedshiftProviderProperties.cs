@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace ardo.DatabaseProvider.Redshift
 {
-    public class RedshiftProviderProperties: PGProviderProperties
+    public class RedshiftProviderProperties: BaseProviderProperties
     {
 
         public RedshiftProviderProperties(IDatabaseProvider provider) : base(provider) { }
@@ -18,6 +18,24 @@ namespace ardo.DatabaseProvider.Redshift
         public override string DisplayName
         {
             get { return "Redshift"; }
+        }
+        // what on earth is this?
+        public override string DatabaseContainerName
+        {
+            get { return "Schema"; }
+        }
+
+        /*
+        public override string ParameterTypeName
+        {
+            get { return "Npgsql.NpgsqlParameter"; }
+        }
+         */
+
+
+        public override bool SupportsMultipleActiveResultSets
+        {
+            get { return false; }
         }
 
     }
