@@ -8,3 +8,15 @@ Install instructions for .NET:
 6) If you have any application that uses the connector, publish it again.
 
 After this you'll get an extra value for PostgreSQL in the Databases dropdown when adding a new Database Connection.
+
+If Platform Server version is 11.18 or later:
+
+1) Stop all OutSystems services (including IIS)
+2) Add a folder with the name ardoRedshift at the C:\Program Files\OutSystems\Platform Server\plugins\database folder.
+2) Copy dlls to the  ardoRedshift folder.
+3) Make sure to open properties and Unblock the DLLs if they are blocked
+4) Restart all OutSystems Services
+5) Run Configuration Tool and install Service Center
+6) If you have any application that uses the connector, publish it again.
+
+After this you'll get an extra value for RedShift in the Databases dropdown when adding a new Database Connection.
